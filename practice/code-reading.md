@@ -16,6 +16,9 @@ Take a look at the following code:
 
 Explain why line 4 and line 6 output different numbers.
 
+The line 4 is a local variable and will be deleted when the function finishes. Variable in the outside of the function (line 1) is a global variable 
+
+
 ## Question 2
 
 Take a look at the following code:
@@ -34,6 +37,9 @@ console.log(y)
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+
+The output will be an error because function f1 contains local variable so i can only be used within the function except of return function
+
 
 ## Question 3
 
@@ -62,3 +68,7 @@ console.log(y);
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+
+The output will be:
+9
+{ x: 10}

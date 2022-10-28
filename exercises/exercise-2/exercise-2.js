@@ -70,3 +70,21 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+
+hogwarts.forEach(el =>
+   {
+  let {firstName, lastName, house} = el;
+  if(house==="Gryffindor")
+  {
+    console.log(firstName + " " + lastName);
+  }
+});
+
+hogwarts.forEach(el => 
+  {
+    let {firstName, lastName, pet, occupation} = el;
+    if(pet != null && occupation === "Teacher")
+  {
+    console.log(firstName + " "+ lastName);
+  }
+  });
